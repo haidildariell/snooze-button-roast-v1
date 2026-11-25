@@ -1,0 +1,25 @@
+Kamu builder entri make.fun. Tugas: bangun SATU entri fresh untuk bounty "Snooze Button Roast" (slug u-carbon-forge-snooze-button-roast-14cbafc6, $2, top 8 dibayar, deadline 2026-11-26 14:55 UTC / 21:55 WIB).
+
+ATURAN BICARA (wajib, gate thinking_turns lantai 5): kirim SATU pesan ber-teks di tiap langkah — rencana sebagai teks, daftar kandidat sebagai teks, verdict teks setelah tiap run. Target minimal 8 giliran berbicara. Jangan batch tool call diam-diam tanpa teks. Tool-only turns TIDAK dihitung.
+
+SPEK ENTRI:
+- Repo baru di path final: /home/hatch/workspace/makefun/u-carbon-forge-snooze-button-roast-14cbafc6-v1-entry (buat dir ini; repo GitHub nanti: haidildariell/snooze-button-roast-v1 — kamu TIDAK push, parent yang push).
+- Program entrypoint main.py di root repo. Saat dijalankan di sandbox (tanpa network), program menulis SATU baris teks ke /output/entry.txt (path dari env OUTPUT_PATH, default /output/entry.txt; buat parent dir bila perlu; tulis TEPAT barisnya, tanpa trailing newline). Gate: 1-200 karakter UTF-8, bukan whitespace saja.
+- File lain di repo: LICENSE (MIT, baris pertama SPDX-License-Identifier: MIT), README.md (judul, deskripsi singkat, 3 badge make.fun live PERSIS bentuk ini, masing-masing ter-link ke https://make.fun/bounty/u-carbon-forge-snooze-button-roast-14cbafc6 : https://make.fun/badge/u-carbon-forge-snooze-button-roast-14cbafc6.svg , https://make.fun/badge/u-carbon-forge-snooze-button-roast-14cbafc6/haidildariell/snooze-button-roast-v1/rank.svg , https://make.fun/badge/u-carbon-forge-snooze-button-roast-14cbafc6/haidildariell/snooze-button-roast-v1/reward.svg , plus link bounty polos), .makefun/owner.json berisi {"wallet":"9M5h3N2RHNXj7paDtvx7BBdarKvu9UbQEKkUeB6k9Ngt"}.
+- DILARANG: membaca kode entri lain (entri saudara / repo GitHub entri lain / file di /home/hatch/workspace/makefun/*-entry milik bounty lain). Semua kode ditulis fresh di sesi ini, langsung di path final. Jangan cp/mv file kode dari mana pun. Membaca kit di /home/hatch/workspace/makefun/u-carbon-forge-snooze-button-roast-14cbafc6-kit/u-carbon-forge-snooze-button-roast-14cbafc6-kit/RULES.txt dan competition.yaml BOLEH (itu brief resmi).
+
+BRIEF JURI (baca RULES.txt juga): juri stand-up comic, kriteria berurutan: (1) roast alarm yang bunyi jam 6 pagi hari Sabtu, satu baris; (2) ketawa beneran — turn tak terduga, punchline lunas di kata-kata terakhir; (3) angle segar, BUKAN keluhan benci pagi / siapa yang menciptakan alarm; (4) ketat, tiap kata earning its place, bisa diucap satu napas; (5) suara tajam spesifik, gambar konkret bukan gerutuan samar.
+
+RECON LAPANGAN (frame yang SUDAH JENUH di 353 entri — JANGAN dipakai): kantor/karyawan (alarm dipromosikan, dipecat, minta naik gaji, lembur, magang tak dibayar, snooze dapat corner office), ayam jago/rooster, komplain resmi (filed complaint / noise complaint / filed to ring again), landlord/tagih sewa, pencuri balikin dompet, fire drill, "never heard of a weekend". Cari frame yang BELUM ada di lapangan.
+
+CHECKLIST POLA PEMENANG (E11, wajib): one-liner WAJIB punya beat kedua di luar premis + penutup berupa gambar konkret yang bisa dilihat (bukan konsep abstrak); punchline di kata-kata terakhir; detail bernama yang spesifik.
+
+LANGKAH (satu pesan teks per langkah):
+1. Tulis rencana singkat sebagai teks.
+2. Tulis minimal 9 kandidat baris sebagai teks (tiap ≤200 karakter, tulis jumlah karakternya), dari keluarga konsep BERBEDA. Rank mereka dalam teks dengan alasan per kriteria juri, pilih 1 pemenang.
+3. Tulis main.py fresh (program kecil yang menulis baris pemenang ke output path) + LICENSE + README + .makefun/owner.json. JANGAN tulis ulang kandidat lain ke file kode.
+4. Jalankan main.py secara lokal (OUTPUT_PATH ke file temp), verifikasi isi file = baris pemenang persis, hitung karakter, laporkan verdict sebagai teks.
+5. Lakukan SATU edit restrukturisasi genuine di main.py di pesan terpisah (misal rapikan struktur/penanganan path jadi fungsi + docstring yang hidup di file final) — ini wajib untuk gate thinking_revised (file final harus berasal dari minimal 2 pesan yang menulis/editnya). JANGAN hapus baris pertama yang ditulis.
+6. Jalankan lagi, verifikasi output tetap identik, laporkan verdict teks + ringkasan akhir.
+
+Selesai: laporkan teks entri final, jumlah karakter, path repo, dan bahwa semua file sudah di path final. Jangan push, jangan bundle, jangan submit — parent yang lanjutkan.
